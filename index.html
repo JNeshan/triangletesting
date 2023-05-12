@@ -1,33 +1,86 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+		/*Setting backgrounds for different sections*/
+		#barHeader{
+			background-color: white;
+		}
+		#dropMenu{
+			background-color: white;
+		}
+		#mainBody{
+			background-color: #90071b;
+		}
+		#footer{
+			background-color: white;
+		}
+
+		/*Prevents smaller screens from seeing link headeer block*/
+		@media only screen and (max-width: 600px){
+			#barHeader{
+				display: none;
+				background-color: white;
+			}
+		}
+		/*Lets smaller screens see drop down*/
+		@media only screen and (max-width: 600px){
+			#dropMenu{
+				display: block;
+			}
+		}
+		/*Prevents bigger screens from seeing drop down*/
+		@media only screen and (min-width: 601px){
+			#dropMenu{
+				display: none;
+			}
+		}
+		
 		hr{
 			border: none;
 			box-shadow: none;
 			height: 2px;
 			background-color: black;
 		}
-		body{
-			background-color:#90071b;
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 24px;
 		}
+		
 	</style>
-
 	<title>Triangle Fraternity</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 </head>
 
 <body>
-	
+	<div id="barHeader">
+		<h1>Triangle Fraternity at MS&T</h1>
+		<p>Link</p>
+	</div>
 
-	<h1 style="text-align:center;">Triangle!</h1>
+	<div id="dropMenu">
+		<p>mobile only text</p>
+		<hr>
+	</div>
+
+	<div id="mainBody">
+		<h1 style="text-align:center;">Triangle!</h1>
+		<hr>
+		<p>Triangle?</p>
+		<img src="cheeseburger.jpg" alt="cheeseburger" width="104" height="142"> 
+	</div>
 	<hr>
-	<p>Triangle?</p>
-	<img src="cheeseburger.jpg" alt="cheeseburger" width="104" height="142"> 
+	<div id="footer">
+		<p>some text</p>
+		<address>
+			some address<br>
+			some line<br>
+			some phone number<br>
+			some email address<br>
+			request link
+		</address>
+	</div>
 </body>
-
-
 </html>
