@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Hide the bar with links on screens smaller than 600px */
+    @media only screen and (max-width: 600px) {
+      #bar {
+        display: none;
+      }
+    }
+    /* Show the drop-down menu on screens smaller than 600px */
+    @media only screen and (max-width: 600px) {
+      #menu {
+        display: block;
+      }
+    }
+    /* Hide the drop-down menu on screens larger than 600px */
+    @media only screen and (min-width: 601px) {
+      #menu {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Bar with links -->
+  <div id="bar">
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+  </div>
+  <!-- Drop-down menu -->
+  <select id="menu">
+    <option value="#section1">Section 1</option>
+    <option value="#section2">Section 2</option>
+    <option value="#section3">Section 3</option>
+  </select>
+  <!-- Sections -->
+  <div id="section1">
+    <h2>Section 1</h2>
+    <p>This is section 1.</p>
+  </div>
+  <div id="section2">
+    <h2>Section 2</h2>
+    <p>This is section 2.</p>
+  </div>
+  <div id="section3">
+    <h2>Section 3</h2>
+    <p>This is section 3.</p>
+  </div>
+</body>
+</html>
