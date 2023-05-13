@@ -1,0 +1,144 @@
+hr{
+    border: none;
+    box-shadow: none;
+    height: 2px;
+    background-color: black;
+    padding: 0;
+    width:1000000000000000000000px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+nav {
+    white-space: nowrap;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    left: 10px;
+}
+  
+
+/* Setting backgrounds for different sections */
+#barHeader{
+    background-color: white;
+}
+#dropMenu{
+    background-color: white;
+}
+#mainBody{
+    padding: 0;
+    margin: 0;
+    background-color: #90071b;
+}
+#bodyText{
+    padding: 20;
+    right: 10px;
+}
+
+#footer{
+    background-color: white;
+    background-image: url("images/celtictriangle.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* Setting backgrounds for different sections */
+
+#navButton {
+    position: absolute;
+    background-image: url(images/cheeseburger.jpg);
+    top: 20px;
+    left: 10px;
+    font-size: 24px;
+    z-index: 1;
+}
+
+#sideNav{
+    
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: -10px;
+    height: 100%;
+    background-color: white ;
+    border: 3px solid grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 2;
+    box-sizing: border-box;
+
+}
+
+/* Hides the side nav when not in use */
+#closeNavButton{
+    background-image: url(images/cheeseburger.jpg);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+}
+
+/* Allows the button to trigger the side nav */
+
+
+/* Expands the side nav when the button is clicked */
+#navButton:focus ~ #sideNav{
+    width: 250px;
+}
+
+/* Contracts the side nav when the close button is clicked */
+#closeNavButton:focus ~ #sideNav{
+    width: 0;
+}
+
+/* Styles the navigation links */
+nav{
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover{
+    opacity: 0.3;
+    background-color: #ddd;
+}
+
+
+
+/* Prevents smaller screens from seeing link header block */
+@media only screen and (max-width: 600px){
+    #barHeader{
+        display: none;
+        background-color: white;
+    }
+}
+/* Lets smaller screens see drop down */
+@media only screen and (max-width: 600px){
+    #dropMenu{
+        display: block;
+    }
+}
+/* Prevents bigger screens from seeing drop down */
+@media only screen and (min-width: 601px){
+    #dropMenu{
+        display: none;
+    }
+}
+

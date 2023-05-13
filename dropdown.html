@@ -1,5 +1,7 @@
+<!--All test code as of current-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<title>My Website</title>
 </head>
@@ -16,3 +18,22 @@
 	<p>Some content here...</p>
 </body>
 </html>
+
+/*Prevents smaller screens from seeing link headeer block*/
+		@media only screen and (max-width: 600px){
+			#barHeader{
+				display: none;
+			}
+		}
+		/*Lets smaller screens see drop down*/
+		@media only screen and (max-width: 600px){
+			#dropMenu{
+				display: block;
+			}
+		}
+		/*Prevents bigger screens from seeing drop down*/
+		@media only screen and (min-width: 601px){
+			#dropMenu{
+				display: none;
+			}
+		}
